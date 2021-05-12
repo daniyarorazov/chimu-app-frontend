@@ -14,20 +14,6 @@ body {
     background-color: $purple_color;
 }
 
-.register__step_1 {
-
-}
-
-.register {
-    &__step_1 {
-        display: none;
-    }
-
-    &__step_2 {
-
-    }
-}
-
 .section-register {
     display: block;
     margin: 0 auto;
@@ -38,6 +24,14 @@ body {
     background-color: #B4ADE6;
     margin-top: 150px;
     margin-bottom: 200px;
+    padding-left: 144px;
+    padding-right: 144px;
+
+    @media (max-width: 1536px) {
+        margin-top: 100px;
+        width: 600px;
+        min-height: 620px; 
+    }
 
     .section {
         &__title {
@@ -47,17 +41,22 @@ body {
             margin-bottom: 50px;
             color: $white_color;
             font-weight: 700;
+            @media (max-width: 1536px) {
+                font-size: 36px;
+            }
         }
 
         &-forms {
             display: block;
             margin: auto;
-            width: 450px;
+            width: 100%;
+            @media (max-width: 1536px) {
+            }
         }
 
         &__input {
             display: block;
-            width: 450px;
+            width: 100%;
             height: 52px;
             border: none;
             border-bottom: 1px solid $white_color;
@@ -78,10 +77,17 @@ body {
                 outline: none;
                 border-bottom: 2px solid #FFDE88;
             }
+
+            @media (max-width: 1536px) {
+                font-size: 16px;
+                margin-top: 20px;
+                padding-bottom: 0;
+                height: 40px;
+            }
         }
 
         &-controls {
-            width: 450px;
+            width: 100%;
             margin: auto;
             margin-top: 50px;
         }
@@ -106,6 +112,12 @@ body {
                 background-color: #d6b561;
                 outline: none;
             }
+
+            @media (max-width: 1536px) {
+                height: 50px;
+                font-size: 18px;
+                border-radius: 10px;
+            }
         }
 
         &__button_login {
@@ -117,12 +129,67 @@ body {
             margin-top: 15px;
             font-size: 18px;
             margin-bottom: 100px;   
+            @media (max-width: 1536px) {
+                font-size: 16px;
+            }
         }
     }
 
 }
 
+
+.register__step_4 {
+    .section {
+        &-forms {
+            
+        }
+
+        &__input {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &__description {
+            margin-top: 50px;
+            width: 100%;
+            min-height: 227px;
+            background-color: transparent;
+            border: 2px solid #F5F5F5;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 18px;
+            color: $white_color;
+            font-weight: 600;
+            &::placeholder {
+                color: #FAFAFA;
+            }
+            &:focus {
+                outline: none;
+                border: 2px solid #FFDE88;
+            }
+        }
+
+        &__file_block {
+            display: flex;
+            width: 155px;
+            height: 155px;
+            background-color: $white_color;
+            border-radius: 1000px;
+            align-items: center;
+            justify-content: center;
+            label {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                color: $purple_color;
+            }
+        }
+    }
+}
+
 .filled {
     border-bottom: 2px solid #FFDE88;
 }
+
 
