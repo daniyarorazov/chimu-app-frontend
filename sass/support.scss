@@ -1,0 +1,96 @@
+@import 'mixins', 'colors';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: $purple_color;
+}
+
+.section-block {
+    display: block;
+    margin: 0 auto;
+    width: 750px;
+    min-height: 800px;
+    height: auto;
+    border-radius: 40px;
+    background: rgba(180, 173, 239, 0.55);
+    backdrop-filter: blur(40px);
+    margin-top: 150px;
+    margin-bottom: 200px;
+    padding-left: 144px;
+    padding-right: 144px;
+
+    @media (max-width: 1536px) {
+        width: 560px;
+        min-height: auto;
+        border-radius: 30px;
+        margin-top: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 40px;
+    }
+
+
+    .section {
+        &__title {
+            font-size: 48px;
+            text-align: center;
+            padding-top: 60px;
+            margin-bottom: 50px;
+            color: $white_color;
+            font-weight: 700;
+            @media (max-width: 1536px) {
+                font-size: 36px;
+                padding-top: 40px;
+                margin-bottom: 30px;
+            }
+        }
+
+        &__input {
+            @include input;
+            @media (max-width: 1536px) {
+                margin-top: 20px;
+            }
+           
+        }
+
+        &__description {
+            @include textarea;
+            @media (max-width: 1536px) {
+                height: 80px;
+                font-size: 16px;
+                margin-top: 30px;
+            }
+        }
+
+        &__controls {
+            width: 100%;
+            margin: auto;
+            margin-top: 50px;
+            @media (max-width: 1536px) {
+                margin-top: 20px;
+            }
+        }
+
+        &__button_send {
+            @include button;
+        }
+    }
+
+}
+
+.image {
+    display: block;
+    position: absolute;
+    width: 1100px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
