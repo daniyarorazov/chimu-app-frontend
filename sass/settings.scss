@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+@import "colors", "mixins";
+
+body {
+  background-color: $purple_color;
+}
+
+.section-both{
+  display: flex;
+}
+
+
+.section-settings {
+
+  &-left {
+    display: block;
+    margin: 0 auto;
+    width: 750px;
+    backdrop-filter: blur(40px);
+    margin-left: 100px;
+    margin-right: 100px;
+    min-height: 800px;
+    height: auto;
+    background: rgba(180, 173, 230, 0.8);
+    border-radius: 40px;
+    margin-top: 58px;
+    margin-bottom: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 144px;
+    padding-right: 144px;
+  }
+
+  &-bg{
+    position: absolute;
+    z-index: auto;
+    
+  }
+
+  &-right{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750px;
+    backdrop-filter: blur(40px);
+    margin-left: 100px;
+    margin-right: 100px;
+    min-height: 800px;
+    height: auto; 
+    opacity: 0.5;
+    border-radius: 40px;
+    background:url("../img/settings/switcher.png");
+    margin-top: 58px;
+    margin-bottom: 200px;
+    padding-left: 144px;
+    padding-right: 144px;
+  }
+
+  &-header__title {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    color: $white_color;
+  }
+
+  &-forms {
+    &__title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 70px;
+      font-size: 48px;
+      color: $white_color;
+    }
+
+    &__input {
+      @include input;
+      margin-top: 111px;
+    }
+
+    &__button {
+      @include button;
+      margin: 139px auto;
+      min-width: 458px;
+    }
+  }
+
+  &-privacy-choices {
+
+    &__title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      padding-top: 62px;
+      font-size: 48px;
+      color: $white_color;
+    }
+    
+    &-form-item {
+      margin-top: 65px;
+      display: flex;
+      align-items:center;
+
+    &__label {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      margin-left: 21px;
+      color: $white_color;
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+body {
+  background-color: #8075FF;
+}
+
+.section-both {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-settings-left {
+  display: block;
+  margin: 0 auto;
+  width: 750px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  margin-left: 100px;
+  margin-right: 100px;
+  min-height: 800px;
+  height: auto;
+  background: rgba(180, 173, 230, 0.8);
+  border-radius: 40px;
+  margin-top: 58px;
+  margin-bottom: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 144px;
+  padding-right: 144px;
+}
+
+.section-settings-bg {
+  position: absolute;
+  z-index: auto;
+}
+
+.section-settings-right {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  margin-left: 100px;
+  margin-right: 100px;
+  min-height: 800px;
+  height: auto;
+  opacity: 0.5;
+  border-radius: 40px;
+  background: url("../img/settings/switcher.png");
+  margin-top: 58px;
+  margin-bottom: 200px;
+  padding-left: 144px;
+  padding-right: 144px;
+}
+
+.section-settings-header__title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 64px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.section-settings-forms__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+.section-settings-forms__input {
+  display: block;
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: transparent;
+  margin-top: 40px;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 600;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  margin-top: 111px;
+}
+
+.section-settings-forms__input::-webkit-input-placeholder {
+  color: #E3DFFF;
+}
+
+.section-settings-forms__input:-ms-input-placeholder {
+  color: #E3DFFF;
+}
+
+.section-settings-forms__input::-ms-input-placeholder {
+  color: #E3DFFF;
+}
+
+.section-settings-forms__input::placeholder {
+  color: #E3DFFF;
+}
+
+.section-settings-forms__input:focus {
+  outline: none;
+  border-bottom: 2px solid #FFDE88;
+}
+
+@media (max-width: 1536px) {
+  .section-settings-forms__input {
+    font-size: 16px;
+    margin-top: 20px;
+    padding-bottom: 0;
+    height: 40px;
+  }
+}
+
+.section-settings-forms__button {
+  display: block;
+  width: 100%;
+  height: 65px;
+  border-radius: 15px;
+  border: none;
+  color: #323232;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #E1BF66;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  margin: 139px auto;
+  min-width: 458px;
+}
+
+.section-settings-forms__button:hover {
+  background-color: #FFDE88;
+}
+
+.section-settings-forms__button:focus {
+  background-color: #d6b561;
+  outline: none;
+}
+
+@media (max-width: 1536px) {
+  .section-settings-forms__button {
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+}
+
+.section-settings-privacy-choices__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  padding-top: 62px;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+.section-settings-privacy-choices-form-item {
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-settings-privacy-choices-form-item__label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  margin-left: 21px;
+  color: #FFFFFF;
+}
