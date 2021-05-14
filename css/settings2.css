@@ -5,12 +5,16 @@ body {
 }
 
 .section-tabs .container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   max-width: 2000px;
 }
 
 .section__password {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-self: center;
   width: 750px;
@@ -18,13 +22,18 @@ body {
 
 .section__password img {
   position: absolute;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
 }
 
 .section__password .block {
   display: block;
   margin: 0 auto;
   width: 750px;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   min-height: 800px;
   height: auto;
   background: rgba(180, 173, 230, 0.8);
@@ -54,8 +63,21 @@ body {
   font-size: 20px;
   color: #FFFFFF;
   font-weight: 600;
+  -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
   margin-bottom: 80px;
+}
+
+.section__password .block-content input::-webkit-input-placeholder {
+  color: #E3DFFF;
+}
+
+.section__password .block-content input:-ms-input-placeholder {
+  color: #E3DFFF;
+}
+
+.section__password .block-content input::-ms-input-placeholder {
+  color: #E3DFFF;
 }
 
 .section__password .block-content input::placeholder {
@@ -86,7 +108,9 @@ body {
   font-size: 24px;
   font-weight: 600;
   background-color: #E1BF66;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
 
@@ -109,6 +133,8 @@ body {
 
 .section__privacy {
   width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-self: center;
 }
@@ -121,7 +147,8 @@ body {
   display: block;
   margin: 0 auto;
   width: 750px;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   min-height: 800px;
   height: auto;
   background: rgba(180, 173, 230, 0.8);
@@ -150,6 +177,8 @@ body {
 }
 
 .section__privacy .block-content-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -163,7 +192,9 @@ body {
   font-size: 24px;
   font-weight: 600;
   background-color: #E1BF66;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
 

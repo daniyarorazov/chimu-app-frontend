@@ -20,6 +20,10 @@ body {
     
     img {
         position: absolute;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
     }
 
     .block {
@@ -62,7 +66,12 @@ body {
     justify-self: center;
     img {
         position: absolute;
+        
+        @media (max-width:1700px){
+            
+        }
     }
+    
 
     .block {
         display: block;
