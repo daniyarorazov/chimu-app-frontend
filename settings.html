@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings Page</title>
+  <link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+  <div class="section-settings-header">
+    <h2 class="section-settings-header__title">Настройки</h2>
+  </div>
+
+  <div class="section-both">
+    <section class="section-settings section-settings-left">
+      <div class="container">
+        <img class="section-settings-bg" src="img/settings/gear.png"></img>
+        <div class="section-setting-edit-password">
+          <div class="section-settings-forms">
+            <h2 class="section-settings-forms__title">Изменение пароля</h2>
+            <div class="section-settings-forms-input">
+              <input type="text" class="section-settings-forms__input" placeholder="Старый пароль" />
+              <input type="text" class="section-settings-forms__input" placeholder="Новый пароль" />
+            </div>
+            <button class="section-settings-forms__button">Сохранить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-settings section-setting-right">
+      <div class="section-settings-privacy">
+        <img class="section-settings-bg" src="img/settings/switcher.png"></img>        
+        <h2 class="section-settings-privacy-choices__title">Приватность</h2>
+        <div class="section-settings-privacy-choices">
+          <form class="section-setting-privacy-choices-form">
+
+            <div class="section-settings-privacy-choices-form-item">
+              <input id="age" class="section-settings-privacy-choices-form-item__checkbox" type="checkbox" value="1">
+              <label class="section-settings-privacy-choices-form-item__label" for="age">Показывать возраст</label>
+            </div>
+
+            <div class="section-settings-privacy-choices-form-item">
+              <input id="abilities" class="section-settings-privacy-choices-form-item__checkbox" type="checkbox"
+                value="2">
+              <label class="section-settings-privacy-choices-form-item__label" for="abilities">Показывать навыки</label>
+            </div>
+
+            <div class="section-settings-privacy-choices-form-item">
+              <input id="something" class="section-settings-privacy-choices-form-item__checkbox" type="checkbox"
+                value="3">
+              <label class="section-settings-privacy-choices-form-item__label" for="something">Показывать что-то</label>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <button class="settings__button section-settings-forms__button">Сохранить</button>
+    </section>
+  </div>
+</body>
+
+</html>

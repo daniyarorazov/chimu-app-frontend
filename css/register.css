@@ -2,7 +2,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -64,7 +65,20 @@ body {
   font-size: 20px;
   color: #FFFFFF;
   font-weight: 600;
+  -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
+}
+
+.section-register .section__input::-webkit-input-placeholder {
+  color: #E3DFFF;
+}
+
+.section-register .section__input:-ms-input-placeholder {
+  color: #E3DFFF;
+}
+
+.section-register .section__input::-ms-input-placeholder {
+  color: #E3DFFF;
 }
 
 .section-register .section__input::placeholder {
@@ -101,7 +115,9 @@ body {
   font-size: 24px;
   font-weight: 600;
   background-color: #E1BF66;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
 
@@ -158,6 +174,21 @@ body {
   font-weight: 600;
 }
 
+<<<<<<< HEAD
+=======
+.register__step_4 .section__description::-webkit-input-placeholder {
+  color: #FAFAFA;
+}
+
+.register__step_4 .section__description:-ms-input-placeholder {
+  color: #FAFAFA;
+}
+
+.register__step_4 .section__description::-ms-input-placeholder {
+  color: #FAFAFA;
+}
+
+>>>>>>> main
 .register__step_4 .section__description::placeholder {
   color: #FAFAFA;
 }
@@ -168,13 +199,27 @@ body {
 }
 
 .register__step_4 .section__file_block {
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> main
   display: flex;
   width: 155px;
   height: 155px;
   background-color: #FFFFFF;
   border-radius: 1000px;
+<<<<<<< HEAD
   align-items: center;
   justify-content: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> main
 }
 
 .register__step_4 .section__file_block label {
