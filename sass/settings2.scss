@@ -1,0 +1,107 @@
+@import 'colors', 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+body {
+    background-color: $purple_color;
+    font-family: 'Montserrat';
+}
+
+.section-tabs .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 2000px;
+}
+
+.section__password {
+    display: flex;
+    justify-self: center;
+    width: 750px;
+    
+    img {
+        position: absolute;
+    }
+
+    .block {
+        display: block;
+        margin: 0 auto;
+        width: 750px;
+        backdrop-filter: blur(10px);
+        min-height: 800px;
+        height: auto;
+        background: rgba(180, 173, 230, 0.8);
+        border-radius: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding-left: 144px;
+        padding-right: 144px;
+        &-header {
+            text-align: center;
+            font-size: 36px;
+        }   
+
+        &-content {
+            margin-top: 40px;
+
+            input {
+                @include input;
+                margin-bottom: 80px;
+            }
+        }
+
+        &-controls {
+            button {
+                @include button;
+            }
+        }
+    }
+}
+
+.section__privacy {
+    width: 750px;
+    display: flex;
+    justify-self: center;
+    img {
+        position: absolute;
+    }
+
+    .block {
+        display: block;
+        margin: 0 auto;
+        width: 750px;
+        backdrop-filter: blur(10px);
+        min-height: 800px;
+        height: auto;
+        background: rgba(180, 173, 230, 0.8);
+        border-radius: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding-left: 144px;
+        padding-right: 144px;
+        &-header {
+            text-align: center;
+            font-size: 36px;
+        }   
+
+        &-content {
+            margin-top: 40px;
+
+            input {
+                margin-bottom: 80px;
+            }
+
+            label {
+                font-size: 24px;
+                margin-left: 20px;
+            }
+
+            &-row {
+                display: flex;
+            }
+        }
+
+        &-controls {
+            button {
+                @include button;
+            }
+        }
+    }
+}

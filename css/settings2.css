@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+body {
+  background-color: #8075FF;
+  font-family: 'Montserrat';
+}
+
+.section-tabs .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 2000px;
+}
+
+.section__password {
+  display: flex;
+  justify-self: center;
+  width: 750px;
+}
+
+.section__password img {
+  position: absolute;
+}
+
+.section__password .block {
+  display: block;
+  margin: 0 auto;
+  width: 750px;
+  backdrop-filter: blur(10px);
+  min-height: 800px;
+  height: auto;
+  background: rgba(180, 173, 230, 0.8);
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 144px;
+  padding-right: 144px;
+}
+
+.section__password .block-header {
+  text-align: center;
+  font-size: 36px;
+}
+
+.section__password .block-content {
+  margin-top: 40px;
+}
+
+.section__password .block-content input {
+  display: block;
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: transparent;
+  margin-top: 40px;
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: 0.1s ease-in;
+  margin-bottom: 80px;
+}
+
+.section__password .block-content input::placeholder {
+  color: #E3DFFF;
+}
+
+.section__password .block-content input:focus {
+  outline: none;
+  border-bottom: 2px solid #FFDE88;
+}
+
+@media (max-width: 1536px) {
+  .section__password .block-content input {
+    font-size: 16px;
+    margin-top: 20px;
+    padding-bottom: 0;
+    height: 40px;
+  }
+}
+
+.section__password .block-controls button {
+  display: block;
+  width: 100%;
+  height: 65px;
+  border-radius: 15px;
+  border: none;
+  color: #323232;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #E1BF66;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.6s ease;
+}
+
+.section__password .block-controls button:hover {
+  background-color: #FFDE88;
+}
+
+.section__password .block-controls button:focus {
+  background-color: #d6b561;
+  outline: none;
+}
+
+@media (max-width: 1536px) {
+  .section__password .block-controls button {
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+}
+
+.section__privacy {
+  width: 750px;
+  display: flex;
+  justify-self: center;
+}
+
+.section__privacy img {
+  position: absolute;
+}
+
+.section__privacy .block {
+  display: block;
+  margin: 0 auto;
+  width: 750px;
+  backdrop-filter: blur(10px);
+  min-height: 800px;
+  height: auto;
+  background: rgba(180, 173, 230, 0.8);
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 144px;
+  padding-right: 144px;
+}
+
+.section__privacy .block-header {
+  text-align: center;
+  font-size: 36px;
+}
+
+.section__privacy .block-content {
+  margin-top: 40px;
+}
+
+.section__privacy .block-content input {
+  margin-bottom: 80px;
+}
+
+.section__privacy .block-content label {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.section__privacy .block-content-row {
+  display: flex;
+}
+
+.section__privacy .block-controls button {
+  display: block;
+  width: 100%;
+  height: 65px;
+  border-radius: 15px;
+  border: none;
+  color: #323232;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #E1BF66;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.6s ease;
+}
+
+.section__privacy .block-controls button:hover {
+  background-color: #FFDE88;
+}
+
+.section__privacy .block-controls button:focus {
+  background-color: #d6b561;
+  outline: none;
+}
+
+@media (max-width: 1536px) {
+  .section__privacy .block-controls button {
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+}
