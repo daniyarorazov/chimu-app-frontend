@@ -1,0 +1,113 @@
+@import 'mixins', 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $purple_color;
+    font-family: 'Montserrat';
+}
+
+main {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 200px;
+}
+
+.section {
+    display: block;
+}
+
+.section-card {
+    width: 100%;
+    margin: auto;
+
+    padding: 50px 28px 25px 28px;
+    border-radius: 8px;
+    border: 2px solid #DBDBDB;
+    
+    background-color: #FAFAFA;
+    
+
+    &__content {
+        display: grid;
+        grid-template-columns: 99px 2fr 1fr;
+    }
+
+    &__controls {
+        display: grid;
+        grid-template-columns: 155px 155px 1fr;
+        margin-top: 28px;
+        grid-gap: 20px;
+    }
+
+    &__img {
+        width: 99px;
+        height: 99px;
+        border-radius: 1000px;
+    }
+
+    .content__text {
+        padding-left: 40px;
+    }
+
+    .content__tags {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__tag {
+        background-color: $purple_color;
+        text-align: center;
+        padding: 4px 11px;
+        margin-right: 10px;
+        border-radius: 4px;
+        color: #FAFAFA;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    &__description {
+        font-size: 16px;
+        margin-top: 19px;
+    }
+
+   
+
+    &__button-join {
+        color: #FAFAFA;
+        padding: 14px 0;
+        background-color: $purple_color;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__button-view {
+        color: $purple_color;
+        padding: 14px 0;
+        background-color: #FAFAFA;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        
+    }
+
+    &__date {
+        display: flex;
+        justify-self: flex-end;
+        align-items: center;
+    }
+
+}
