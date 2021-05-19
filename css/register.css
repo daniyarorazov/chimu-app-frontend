@@ -52,33 +52,25 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   color: #FFFFFF;
-<<<<<<< HEAD
-  font-weight: 600;
+  font-weight: 500;
+  padding-bottom: 10px;
   -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
 }
 
-.section-register .section__input::-webkit-input-placeholder {
+.section-register__input::-webkit-input-placeholder {
   color: #E3DFFF;
 }
 
-.section-register .section__input:-ms-input-placeholder {
+.section-register__input:-ms-input-placeholder {
   color: #E3DFFF;
 }
 
-.section-register .section__input::-ms-input-placeholder {
+.section-register__input::-ms-input-placeholder {
   color: #E3DFFF;
-}
-
-.section-register .section__input::placeholder {
-=======
-  font-weight: 500;
-  padding-bottom: 10px;
-  transition: 0.1s ease-in;
 }
 
 .section-register__input::placeholder {
->>>>>>> main
   color: #E3DFFF;
 }
 
@@ -167,23 +159,19 @@ body {
   font-weight: 600;
 }
 
-<<<<<<< HEAD
-.register__step_4 .section__description::-webkit-input-placeholder {
+.register__step_4 .section-register__description::-webkit-input-placeholder {
   color: #FAFAFA;
 }
 
-.register__step_4 .section__description:-ms-input-placeholder {
+.register__step_4 .section-register__description:-ms-input-placeholder {
   color: #FAFAFA;
 }
 
-.register__step_4 .section__description::-ms-input-placeholder {
+.register__step_4 .section-register__description::-ms-input-placeholder {
   color: #FAFAFA;
 }
 
-.register__step_4 .section__description::placeholder {
-=======
 .register__step_4 .section-register__description::placeholder {
->>>>>>> main
   color: #FAFAFA;
 }
 
@@ -192,13 +180,9 @@ body {
   border: 2px solid #FFDE88;
 }
 
-<<<<<<< HEAD
-.register__step_4 .section__file_block {
+.register__step_4 .section-register__file_block {
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-.register__step_4 .section-register__file_block {
->>>>>>> main
   display: flex;
   width: 155px;
   height: 155px;
