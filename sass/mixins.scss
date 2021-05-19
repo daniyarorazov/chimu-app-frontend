@@ -87,3 +87,9 @@
         border-radius: 10px;
     }
 }
+
+@mixin text ($font_weight: 400) {
+    font-family: 'Rubik', sans-serif;
+    font-weight: $font_weight;
+    color: $white_color;
+}
