@@ -15,8 +15,11 @@ body {
     background-color: $purple_color;
 }
 
+.register__step_2, .register__step_3, .register__step_4 {
+    display: none;
+}
+
 .section-register {
-    display: block;
     margin: 0 auto;
     width: 559px;
     min-height: 568px;
@@ -28,6 +31,33 @@ body {
     padding-left: 100px;
     padding-right: 100px;
 
+    @media (max-height: 667px) {
+        margin-top: 40px;
+    }
+
+    @media (max-height: 607px) {
+        margin-top: 0;
+        height: 100vh;
+    }
+
+    @media (max-width: 560px) {
+        border-radius: 0;
+        width: auto;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    @media (max-width: 464px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (max-width: 400px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
     &__title {
         font-size: 24px;
         text-align: center;
@@ -35,15 +65,12 @@ body {
         margin-bottom: 50px;
         color: $white_color;
         font-weight: 700;
-
-       
     }
 
     &-forms {
         display: block;
         margin: auto;
         width: 100%;
-
     }
 
     &__input {
@@ -129,16 +156,25 @@ body {
         text-decoration: none;
         font-size: 18px;
         margin-top: 15px;
+        padding-top: 20px;
         margin-bottom: 22px;
+        margin: 0 auto;
+        border: none;
+        background: none;
     }
-
 
 }
 
 
 .register__step_4  {
-    
+    padding-bottom: 20px;
+
+    @media (max-height: 607px) {
+        height: auto;
+    }
+
     .section-register {
+        
 
         &__input {
             position: absolute;
@@ -177,12 +213,20 @@ body {
             align-items: center;
             justify-content: center;
 
+            @media (max-width: 374px) {
+                margin: auto;
+            }
+
             label {
+
                 text-align: center;
                 font-size: 18px;
                 font-weight: 600;
                 color: $purple_color;
             }
+        }
+
+        &__button_back {
         }
     }
 }

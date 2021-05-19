@@ -11,8 +11,11 @@ body {
   background-color: #8075FF;
 }
 
+.register__step_2, .register__step_3, .register__step_4 {
+  display: none;
+}
+
 .section-register {
-  display: block;
   margin: 0 auto;
   width: 559px;
   min-height: 568px;
@@ -23,6 +26,42 @@ body {
   margin-bottom: 200px;
   padding-left: 100px;
   padding-right: 100px;
+}
+
+@media (max-height: 667px) {
+  .section-register {
+    margin-top: 40px;
+  }
+}
+
+@media (max-height: 607px) {
+  .section-register {
+    margin-top: 0;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-register {
+    border-radius: 0;
+    width: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 464px) {
+  .section-register {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-register {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .section-register__title {
@@ -121,7 +160,21 @@ body {
   text-decoration: none;
   font-size: 18px;
   margin-top: 15px;
+  padding-top: 20px;
   margin-bottom: 22px;
+  margin: 0 auto;
+  border: none;
+  background: none;
+}
+
+.register__step_4 {
+  padding-bottom: 20px;
+}
+
+@media (max-height: 607px) {
+  .register__step_4 {
+    height: auto;
+  }
 }
 
 .register__step_4 .section-register__input {
@@ -160,6 +213,12 @@ body {
   border-radius: 1000px;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 374px) {
+  .register__step_4 .section-register__file_block {
+    margin: auto;
+  }
 }
 
 .register__step_4 .section-register__file_block label {
