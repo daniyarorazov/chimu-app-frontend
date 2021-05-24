@@ -14,7 +14,7 @@ body {
   background-color: #8075FF;
 }
 
-.auth {
+.section-auth {
   background: rgba(255, 251, 251, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -62,7 +62,7 @@ body {
     width: 100%;
   }
 
-  &-forms__input {
+  &__input {
     @include input;
     margin-top: 37px;
     display: block;
