@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -25,13 +26,43 @@ body {
 
 @media (max-width: 1219px) {
   .section-404 {
-    display: block;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     margin: 0;
+  }
+}
+
+@media (max-width: 506px) {
+  .section-404 {
+    width: 100%;
   }
 }
 
 .section-404-left {
   margin-left: 187px;
+}
+
+@media (max-width: 1219px) {
+  .section-404-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 506px) {
+  .section-404-left {
+    padding: 0 40px;
+    width: 100%;
+  }
 }
 
 .section-404-left__title {
@@ -40,8 +71,14 @@ body {
   color: #F9F9F9;
 }
 
+@media (max-width: 506px) {
+  .section-404-left__title {
+    font-size: 30px;
+  }
+}
+
 .section-404-left__descr {
-  font-family: Rubik;
+  font-family: 'Rubik';
   font-weight: normal;
   margin-top: 17px;
   font-size: 20px;
@@ -62,7 +99,8 @@ body {
   transition: 0.6s ease;
   width: 458px;
   font-weight: bold;
-  margin-top: 75px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   height: 65px;
   font-family: 'Montserrat';
   border-radius: 15px;
@@ -84,7 +122,43 @@ body {
   }
 }
 
+@media (max-width: 506px) {
+  .section-404-left__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1219px) {
+  .section-404-right {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
 .section-404-right__img {
   width: 528px;
   height: 411px;
+}
+
+@media (max-width: 1219px) {
+  .section-404-right__img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 671px) {
+  .section-404-right__img {
+    width: 428px;
+    height: 311px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 470px) {
+  .section-404-right__img {
+    width: 293px;
+    height: auto;
+  }
 }

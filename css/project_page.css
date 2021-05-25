@@ -71,6 +71,12 @@ button:focus {
   color: #FAFAFA;
 }
 
+@media (max-width: 350px) {
+  .section__title {
+    font-size: 24px;
+  }
+}
+
 .section-basic {
   padding: 70px 60px;
   margin-top: 80px;
@@ -273,6 +279,12 @@ button:focus {
   margin-top: 47px;
 }
 
+@media (max-width: 570px) {
+  .section-skills {
+    padding: 70px 40px;
+  }
+}
+
 .section-skills__title {
   margin-bottom: 30px;
 }
@@ -283,6 +295,13 @@ button:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 474px) {
+  .section-skills__block span {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .section-skills__tag {
@@ -304,6 +323,12 @@ button:focus {
   margin-top: 47px;
 }
 
+@media (max-width: 560px) {
+  .section-about {
+    padding: 70px 40px;
+  }
+}
+
 .section-about__title {
   margin-bottom: 20px;
 }
@@ -319,6 +344,13 @@ button:focus {
 .section-contacts {
   padding: 70px 60px;
   margin-top: 47px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 570px) {
+  .section-contacts {
+    padding: 70px 40px;
+  }
 }
 
 .section-contacts__title {
